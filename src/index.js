@@ -1,0 +1,14 @@
+//入口文件
+import Vue from 'vue'
+import App from './app.vue'
+
+import './assets/styles/test.css'
+import './assets/styles/test-stylus.styl'
+import './assets/images/bg.jpeg'
+
+const root = document.captureEvent('div')
+document.body.appendChild(root)
+
+new Vue({
+    render: (h) => h(App)
+}).$mount(root)//挂载节点
